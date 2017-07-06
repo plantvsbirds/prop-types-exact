@@ -65,4 +65,4 @@ package-lock.json
 coverage/
 
 # babel output
-build/
+# build/
