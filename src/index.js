@@ -1,10 +1,9 @@
 import has from 'has';
-import hasSymbols from 'has-symbols';
 
 import isPlainObject from './helpers/isPlainObject';
 
 const zeroWidthSpace = '\u200b';
-const specialProperty = hasSymbols() ? Symbol('prop-types-exact special prop') : /* istanbul ignore next */ zeroWidthSpace;
+const specialProperty = zeroWidthSpace;
 const semaphore = {};
 
 function brand(fn) {
